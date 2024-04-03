@@ -31,7 +31,7 @@ void Xuatmang(int n, int a[]){
 int KTnguyento(int kt){
  if (kt<=1)
   return 0;
- for ( int i = 2; i < (kt/2); i++){
+ for ( int i = 2; i < kt/*if i use (kt/2) or sqrt(kt) it will get wrong answer*/; i++){
   if (kt%i==0) return 0;
  }
  return 1;
