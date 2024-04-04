@@ -40,7 +40,7 @@ float tbc_snt(int n,int a[]){
   int tong=0;
   float dem=0;
   for (int i = 0; i <=n-1; i++){
-    if (KTnguyento(a[i])==1){
+    if (KTnguyento(a[i])){//default KTnguyento(a[i])==1
       tong+=a[i];
       dem++;
       printf("%d\t",a[i]);
